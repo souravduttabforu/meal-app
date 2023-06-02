@@ -67,7 +67,11 @@ searchBar.onkeydown = () => {
         border:none;
         border-radius:10px;
         margin-top:3rem">
-        <a style="background-color:#0E8388;">Meal Recipe
+        <a href="${meal.strSource}" target="_blank"
+        style="background-color:#0E8388;
+        color:#CBE4DE;
+        text-decoration:none
+        ">Meal Recipe
         </a></button>
         <button class="fav-button"
         style="margin-left:8rem;

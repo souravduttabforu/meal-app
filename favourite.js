@@ -24,7 +24,7 @@ window.addEventListener("load", () => {
         "main-favourite-container"
       );
       const meal = data.meals[0];
-
+      console.log(meal)
       favMainContainer.innerHTML += `<div 
             id=${meal.idMeal}
             style="background-color: #2E4F4F ;
@@ -67,7 +67,12 @@ window.addEventListener("load", () => {
             color:#CBE4DE;
             background-color:#0E8388;
             display:block"
-            >view reciepe</button>
+            >
+            <a href=${meal.strSource} target="_blank"
+            style="color:#CBE4DE;
+            background-color:#0E8388;
+            text-decoration:none">view reciepe</a>
+            </button>
 
             <button 
             class="delist-button"
